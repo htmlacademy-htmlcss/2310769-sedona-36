@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 1200px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  font-family: inherit;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #82B3D3;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.button.button-large {
+  font-size: 20px;
+  line-height: 36px;
+  height: 52px;
+}
+
+.button.secondary {
+  background-color: #756157;
+}
+
+.button.favorite {
+  background-color: #7DB54F;
+}
+
+.button.ghost {
+  background-color: transparent;
+}
+
+.main-index {
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navigation-list {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.user-menu-link {
+  text-decoration: none;
+}
+
+.user-menu-button {
+  width: 160px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+
+  background-color: #7DB54F;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.hero {
+  background-image: url("../images/background-hero.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  background-color: #9dc4dd;
+}
+
+.hero-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-item.full-description .advantages-card {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-item.short-description:nth-child(odd) .advantages-card {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item.short-description:nth-child(even) .advantages-card {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-card {
+  width: 400px;
+  height: 384px;
+}
+
+.advantages-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item.service:nth-child(odd) .advantages-card {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.hero-description,
+.service-description,
+.offer-description,
+.newsletter-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.offer-link {
+  min-width: 376px;
+}
+
+.newsletter {
+  width: 1200px;
+  height: 414px;
+  text-align: center;
+}
+
+.newsletter.with-background {
+  background-image: url("../images/background-subscribe.jpg");
+  color: #ffffff;
+  background-color: #8baab8;
+}
+
+.newsletter.with-background .title {
+  color: inherit;
+}
+
+.newsletter-button {
+  width: 232px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog {
+  width: 1200px;
+  height: 412px;
+  background-image: url("../images/background-filter.jpg");
+  color: #ffffff;
+  background-color: #8baab8;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.catalog-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: inherit;
+}
+
+.filter-form-set-name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.filter-form-list {
+  line-height: 23px;
+}
+
+.form-button {
+  width: 190px;
+}
+
+.sort-select {
+  padding: 14px 20px;
+  width: 292px;
+  height: 50px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.catalog-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.catalog-card-rating {
+  display: block;
+  width: 95px;
+  height: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.pagination-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-link.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.pagination-link.pagination-more {
+  color: #000000;
+  background-color: transparent;
+}
