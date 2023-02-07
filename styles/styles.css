@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -14,6 +16,8 @@
   font-display: swap;
 }
 
+/* MIXINS */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,14 +29,6 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: "PT Sans";
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  width: 1200px;
 }
 
 .button {
@@ -74,10 +70,6 @@ body {
   background-color: transparent;
 }
 
-.main-index {
-  text-align: center;
-}
-
 .title {
   font-size: 30px;
   line-height: 36px;
@@ -85,9 +77,21 @@ body {
   color: #000000;
 }
 
+/* GLOBAL */
+
+body {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  width: 1200px;
+}
+
 ul {
   list-style-type: none;
 }
+
+/* HEADER */
 
 .navigation-list {
   font-weight: 700;
@@ -121,6 +125,12 @@ ul {
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
+}
+
+/* INDEX */
+
+.main-index {
+  text-align: center;
 }
 
 .hero {
@@ -197,12 +207,16 @@ ul {
   width: 232px;
 }
 
+/* FOOTER */
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
 }
+
+/* CATALOG */
 
 .catalog {
   width: 1200px;
