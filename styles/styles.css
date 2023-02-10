@@ -75,9 +75,24 @@
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 0;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0;
 }
 
 /* GLOBAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -85,15 +100,37 @@ body {
   line-height: 21px;
   color: #333333;
   width: 1200px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
 
+.header {
+  display: flex;
+  padding: 0 70px;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+
 .navigation-list {
+  display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -105,6 +142,27 @@ ul {
   text-decoration: none;
 }
 
+.navigation-logo-link {
+  margin-right: 44px;
+}
+
+.navigation-item {
+  margin-right: 32px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu-item {
+  margin-right: 26px;
+}
+
+.user-menu-item.with-badge {
+  margin-right: 33px;
+}
+
 .user-menu-link {
   text-decoration: none;
 }
@@ -114,7 +172,7 @@ ul {
 }
 
 .badge {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 20px;
@@ -134,6 +192,9 @@ ul {
 }
 
 .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/background-hero.jpg");
   background-repeat: no-repeat;
   width: 1200px;
@@ -141,9 +202,31 @@ ul {
   background-color: #9dc4dd;
 }
 
+.hero-info {
+  padding: 70px 274px;
+}
+
+.hero-title {
+  margin-bottom: 25px;
+}
+
 .hero-description {
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-item.full-description {
+  display: flex;
+}
+
+.advantages-card-image {
+  /* display: none; */
 }
 
 .advantages-item.full-description .advantages-card {
@@ -160,8 +243,17 @@ ul {
 }
 
 .advantages-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 84px;
   width: 400px;
   height: 384px;
+}
+
+.advantages-icon {
+  margin-bottom: 30px;
 }
 
 .advantages-card-title {
@@ -169,18 +261,31 @@ ul {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0 0 30px;
 }
 
-.advantages-item.service:nth-child(odd) .advantages-card {
+.advantages-card-description {
+  margin: 0;
+}
+
+.advantages-item.for-service:nth-child(odd) .advantages-card {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.hero-description,
-.service-description,
-.offer-description,
-.newsletter-description {
-  font-size: 22px;
-  line-height: 26px;
+.service {
+  padding: 64px 348px;
+}
+
+.offer {
+  padding: 96px 304px;
+}
+
+.offer-title {
+  margin-bottom: 20px;
+}
+
+.offer-description {
+  margin-bottom: 54px;
 }
 
 .offer-link {
@@ -188,9 +293,48 @@ ul {
 }
 
 .newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 1200px;
   height: 414px;
   text-align: center;
+  padding: 96px 258px 104px;
+}
+
+.newsletter-title {
+  margin-bottom: 20px;
+}
+
+.newsletter-description {
+  margin-bottom: 54px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+}
+
+.newsletter-field {
+  flex-grow: 1;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-family: inherit;
+  padding: 14px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.newsletter-field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 .newsletter.with-background {
@@ -205,9 +349,23 @@ ul {
 
 .newsletter-button {
   width: 232px;
+  border-radius: 0 4px 4px 0;
 }
 
 /* FOOTER */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 70px 35px 80px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
 
 .contacts-phone {
   font-size: 40px;
