@@ -80,7 +80,7 @@
 /* GLOBAL */
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
