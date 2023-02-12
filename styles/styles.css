@@ -48,7 +48,6 @@
   text-transform: uppercase;
   text-align: center;
   padding: 8px 18px;
-  box-sizing: border-box;
   white-space: nowrap;
 }
 
@@ -130,6 +129,7 @@ ul {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-weight: 700;
   font-size: 20px;
@@ -361,8 +361,13 @@ ul {
   padding: 45px 70px 35px 80px;
 }
 
+.page-footer section {
+  max-width: calc(100% / 3);
+}
+
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 26px;
 }
