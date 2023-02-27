@@ -176,6 +176,8 @@ img {
 }
 
 .user-menu-link {
+  display: flex;
+  position: relative;
   text-decoration: none;
 }
 
@@ -184,7 +186,10 @@ img {
 }
 
 .badge {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: -13px;
+  right: -9px;
   align-items: center;
   justify-content: center;
   width: 20px;
@@ -414,11 +419,19 @@ img {
   padding-left: 0;
 }
 
+.footer-social-link {
+  display: flex;
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
   color: inherit;
+}
+
+.copyright-link {
+  display: flex;
 }
 
 /* CATALOG */
@@ -437,10 +450,46 @@ img {
 }
 
 .filter-form-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.input-number-wrapper {
+  display: flex;
+  margin-bottom: 46px;
+}
+
+.range {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.range-progress {
+  position: relative;
+  width: 73%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.range-control {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.range-control.max {
+  right: 0;
 }
 
 .catalog-title {
@@ -653,3 +702,45 @@ img {
   background-color: transparent;
 }
 
+.form-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  gap: 16px;
+}
+
+.custom-checkbox {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.input-checkbox:checked + .custom-checkbox {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='11' viewBox='0 0 13 11' fill='none'%3E%3Cpath d='M11 0.5L4.5 7.9L1.1 4L0 5.2L4.5 10.4L12.2 1.8L11 0.5Z' fill='%233F5E72'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+.input-radio:checked + .custom-radio::after {
+  content: "";
+  display: block;
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
+}
