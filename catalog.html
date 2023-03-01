@@ -72,21 +72,24 @@
             <legend class="filter-form-set-name">Инфраструктура:</legend>
             <ul class="filter-form-list">
               <li class="filter-form-item">
-                <label>
-                  <input type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                <label class="form-label">
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="swimming-pool" checked>
+                  <span class="custom-checkbox"></span>
+                  <span class="form-label-text">Бассейн</span>
                 </label>
               </li>
               <li class="filter-form-item">
-                <label>
-                  <input type="checkbox" name="parking" checked>
-                  Парковка
+                <label class="form-label">
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="parking" checked>
+                  <span class="custom-checkbox"></span>
+                  <span class="form-label-text">Парковка</span>
                 </label>
               </li>
               <li class="filter-form-item">
-                <label>
-                  <input type="checkbox" name="wi-fi">
-                  Wi-Fi
+                <label class="form-label">
+                  <input class="visually-hidden input-checkbox" type="checkbox" name="wi-fi">
+                  <span class="custom-checkbox"></span>
+                  <span class="form-label-text">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -95,39 +98,45 @@
             <legend class="filter-form-set-name">Тип жилья:</legend>
             <ul class="filter-form-list">
               <li class="filter-form-item">
-                <label>
-                  <input type="radio" name="accommodation" value="hotel" checked>
-                  Гостиница
+                <label class="form-label">
+                  <input class="visually-hidden input-radio" type="radio" name="accommodation" value="hotel" checked>
+                  <span class="custom-radio"></span>
+                  <span class="form-label-text">Гостиница</span>
                 </label>
               </li>
               <li class="filter-form-item">
-                <label>
-                  <input type="radio" name="accommodation" value="motel">
-                  Мотель
+                <label class="form-label">
+                  <input class="visually-hidden input-radio" type="radio" name="accommodation" value="motel">
+                  <span class="custom-radio"></span>
+                  <span class="form-label-text">Мотель</span>
                 </label>
               </li>
               <li class="filter-form-item">
-                <label>
-                  <input type="radio" name="accommodation" value="apartments">
-                  Апартаменты
+                <label class="form-label">
+                  <input class="visually-hidden input-radio" type="radio" name="accommodation" value="apartments">
+                  <span class="custom-radio"></span>
+                  <span class="form-label-text">Апартаменты</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter-form-set">
             <legend class="filter-form-set-name">Стоимость, ₽:</legend>
-            <label>
-              <input type="number" name="min-cost" min="0" max="9999" value="0">
-            </label>
-            <label>
-              <input type="number" name="max-cost" min="1" max="10000" value="9000">
-            </label>
-            <label>
-              <input type="range" name="min-cost" min="0" max="9999" value="0">
-            </label>
-            <label>
-              <input type="range" name="max-cost" min="1" max="10000" value="9000">
-            </label>
+            <div class="input-number-wrapper">
+              <label>
+                <input type="number" name="min-cost" min="0" max="9999" value="0">
+              </label>
+              <label>
+                <input type="number" name="max-cost" min="1" max="10000" value="9000">
+              </label>
+            </div>
+            <div class="range">
+              <div class="range-progress">
+                <span class="range-control min"></span>
+                <span class="range-control max"></span>
+              </div>
+            </div>
+
           </fieldset>
           <fieldset class="filter-form-set">
             <ul class="form-button-list">
@@ -170,7 +179,7 @@
             </li>
             <li class="view-item">
               <button class="view-button">
-                <svg width="16" height="14" >
+                <svg width="16" height="14">
                   <use xlink:href="images/sprite.svg#fullsize-icon" />
                 </svg>
                 <span class="visually-hidden">Отображать большим изображением</span>
@@ -331,7 +340,7 @@
         </form>
       </section>
     </main>
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
