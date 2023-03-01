@@ -199,6 +199,64 @@
         </a>
       </section>
     </footer>
+    <article class="overlay">
+      <section class="popup">
+        <h2 class="title popup-title">Поиск гостиницы в Седоне</h2>
+        <button type="button" class="popup-close-button">
+          <svg width="15" height="15">
+            <use xlink:href="images/sprite.svg#button-cross" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span></button>
+
+        <form class="popup-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <ul class="popup-list">
+            <li class="popup-list-item">
+              <label class="popup-form-label">
+                <span class="popup-form-text">Дата заезда:</span>
+                <div class="input-wrapper">
+                  <input class="popup-form-input large" type="date" name="check-in-date" value="2020-04-27">
+                  <span class="hint error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </label>
+            </li>
+            <li class="popup-list-item">
+              <label class="popup-form-label">
+                <span class="popup-form-text">Дата выезда:</span>
+                <div class="input-wrapper">
+                  <input class="popup-form-input large" type="date" name="check-out-date" value="2023-09-01">
+                  <span class="hint success">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </label>
+            </li>
+            <li class="popup-list-item">
+              <div class="label-wrapper">
+                <label class="popup-form-label">
+                  <span class="popup-form-text">Взрослые:</span>
+                  <input class="popup-form-input small" type="number" name="adults" value="2">
+                </label>
+                <label class="popup-form-label">
+                  <span class="popup-form-text">Дети:
+                    <span class="tooltip-wrapper">
+                      <span class="info">
+                        <svg width="2" height="12">
+                          <use xlink:href="images/sprite.svg#info" />
+                        </svg>
+                      </span>
+                      <span class="tooltip-cloud">Укажите количество детей, которые будут с вами, возраст которых от 6
+                        до
+                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </span>
+                  </span>
+                  <input class="popup-form-input small" type="number" name="children" value="2">
+                </label>
+              </div>
+            </li>
+          </ul>
+          <button type="submit" class="button popup-form-submit">Найти</button>
+        </form>
+      </section>
+
+    </article>
   </body>
 
 </html>
