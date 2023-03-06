@@ -457,6 +457,21 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  outline: none;
+}
+
+.newsletter-field:hover {
+  background-color: #E6E6E6;
+}
+
+.newsletter-field:focus {
+  background-color: #E6E6E6;
+  outline: 2px solid #68A2CA;
+}
+
+.newsletter-field:active {
+  background-color: #F2F2F2;
+  outline: 2px solid #000000;
 }
 
 .newsletter-field::placeholder {
