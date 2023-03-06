@@ -337,10 +337,6 @@ img {
   display: flex;
 }
 
-.advantages-card-image {
-  /* display: none; */
-}
-
 .advantages-item.full-description .advantages-card {
   background-color: #82B3D3;
   color: #ffffff;
