@@ -7,10 +7,8 @@ openButton.addEventListener('click', (evt) => {
   popup.classList.add('show')
 })
 
-closeButton.addEventListener('click', () => {
-  popup.classList.remove('show')
-})
-
-popup.addEventListener('click', () => {
+closeButton.addEventListener('click', (evt) => {
+  evt.preventDefault()
+  evt.stopPropagation()
   popup.classList.remove('show')
 })

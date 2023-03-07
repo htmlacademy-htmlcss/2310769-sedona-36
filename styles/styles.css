@@ -176,7 +176,6 @@ body {
 
 img {
   max-width: 100%;
-  object-fit: contain;
 }
 
 .content {
@@ -333,20 +332,20 @@ img {
   padding-left: 0;
 }
 
-.advantages-item.full-description {
+.full-description {
   display: flex;
 }
 
-.advantages-item.full-description .advantages-card {
+.full-description .advantages-card {
   background-color: #82B3D3;
   color: #ffffff;
 }
 
-.advantages-item.short-description:nth-child(odd) .advantages-card {
+.short-description:nth-child(odd) .advantages-card {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item.short-description:nth-child(even) .advantages-card {
+.short-description:nth-child(even) .advantages-card {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -394,7 +393,7 @@ img {
   margin: 0;
 }
 
-.advantages-item.for-service:nth-child(odd) .advantages-card {
+.for-service:nth-child(odd) .advantages-card {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -439,6 +438,7 @@ img {
 
 .newsletter-form {
   display: flex;
+  align-items: center;
   width: 100%;
 }
 
@@ -454,6 +454,7 @@ img {
   line-height: 24px;
   color: #000000;
   outline: none;
+  margin: 0;
 }
 
 .newsletter-field:hover {
@@ -478,13 +479,13 @@ img {
   font-weight: 400;
 }
 
-.newsletter.with-background {
+.with-background {
   background-image: url("../images/background-subscribe.jpg");
   color: #ffffff;
   background-color: #8baab8;
 }
 
-.newsletter.with-background .title {
+.with-background .title {
   color: inherit;
 }
 
@@ -621,6 +622,7 @@ img {
   padding: 12px 20px;
   font-weight: 700;
   font-size: 18px;
+  appearance: textfield;
 }
 
 .filter-input-number:hover {
@@ -634,7 +636,7 @@ img {
 
 .filter-input-number::-webkit-outer-spin-button,
 .filter-input-number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .filter-input-number.min {
@@ -761,6 +763,7 @@ img {
 }
 
 .filter-form-set {
+  margin-left: 0;
   padding: 0;
   border: none;
 }
@@ -783,6 +786,7 @@ img {
 .filter-form-set.button-wrapper {
   width: 190px;
   padding-top: 58px;
+  margin-right: 0;
 }
 
 .filter-form-set-name {
@@ -869,7 +873,6 @@ img {
 
   width: 12px;
   height: 8px;
-  /* background-color: black; */
 }
 
 .view-list {
@@ -1059,6 +1062,7 @@ img {
   height: 20px;
   border-radius: 4px;
   background-color: #fff;
+  flex-shrink: 0;
 }
 
 .form-label-text.radio::before {
@@ -1071,6 +1075,7 @@ img {
   background-color: #fff;
   border-radius: 50%;
   border: 5px solid #fff;
+  flex-shrink: 0;
 }
 
 .input-checkbox:checked + .checkbox::before {
@@ -1202,11 +1207,12 @@ img {
   width: 30px;
   padding: 12px 0;
   text-align: center;
+  appearance: textfield
 }
 
 .popup-form-input.number::-webkit-outer-spin-button,
 .popup-form-input.number::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .input-number-button {
