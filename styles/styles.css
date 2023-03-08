@@ -249,7 +249,7 @@ img {
   padding-left: 0;
 }
 
-.user-menu-item {
+.user-menu-item:not(:last-child) {
   margin-right: 26px;
 }
 
@@ -311,7 +311,7 @@ img {
 }
 
 .hero-info {
-  padding: 70px 274px;
+  padding: 70px 274px 90px;
 }
 
 .hero-title {
@@ -511,7 +511,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 26px;
+  gap: 27px;
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -546,6 +546,7 @@ img {
   text-decoration: none;
   color: inherit;
   outline: none;
+  padding-left: 10px;
 }
 
 .contacts-phone:hover {
@@ -605,11 +606,12 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  line-height: 23px;
 }
 
 .input-number-wrapper {
   display: flex;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
   gap: 2px;
 }
 
@@ -671,9 +673,9 @@ img {
 
 .range-progress {
   position: relative;
-  width: 73%;
+  width: 78.5%;
   height: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .range-control {
@@ -685,7 +687,7 @@ img {
   width: 20px;
   border-radius: 5px;
   border: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   outline: none;
   cursor: move;
 }
@@ -770,7 +772,7 @@ img {
 
 .filter-form-set.infrastructure {
   width: 150px;
-  margin-right: 70px;
+  margin-right: 67px;
 }
 
 .filter-form-set.apartments {
@@ -793,12 +795,8 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   text-transform: capitalize;
-}
-
-.filter-form-list {
-  line-height: 23px;
 }
 
 .form-button {
@@ -915,7 +913,7 @@ img {
   gap: 20px;
   list-style-type: none;
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-left: 0;
 }
 
@@ -927,7 +925,7 @@ img {
 }
 
 .catalog-card-image {
-  margin-bottom: 16px;
+  margin-bottom: 13px;
 }
 
 .catalog-card-title {
@@ -941,8 +939,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 16px;
+  margin-top: 0;
+  margin-bottom: 16px;
   gap: 20px;
+}
+
+.catalog-card-row:last-child {
+  margin-bottom: 0;
 }
 
 .catalog-card-button {
@@ -973,7 +976,7 @@ img {
 .divider {
   width: 100%;
   border: 1px solid #E6E6E6;
-  margin: 0 0 40px;
+  margin: 0 0 39px;
 }
 
 .pagination {
@@ -1061,7 +1064,7 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #ffffff;
   flex-shrink: 0;
 }
 
@@ -1072,9 +1075,9 @@ img {
   justify-content: center;
   width: 20px;
   height: 20px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: 5px solid #ffffff;
   flex-shrink: 0;
 }
 
@@ -1123,13 +1126,13 @@ img {
   width: 716px;
   min-height: 570px;
   padding: 64px 70px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
 .popup-title {
-  margin-bottom: 64px;
+  margin-bottom: 67px;
   line-height: 1;
 }
 
@@ -1177,6 +1180,10 @@ img {
   text-transform: capitalize;
 }
 
+.popup-form-text.children {
+  padding-left: 6px;
+}
+
 .popup-form-input {
   font-family: inherit;
   height: 48px;
@@ -1199,7 +1206,7 @@ img {
 
 .popup-form-input.date {
   width: 440px;
-  padding: 12px 20px;
+  padding: 12px 18px;
 }
 
 .popup-form-input.number {
@@ -1276,9 +1283,11 @@ img {
   height: 60px;
   font-size: 20px;
   line-height: 24px;
+  border-radius: 10px;
 }
 
 .hint {
+  display: block;
   padding-top: 4px;
   padding-right: 20px;
   padding-left: 20px;
